@@ -307,7 +307,7 @@ h6{
 }
 /*responsive codes for phones and tablet*/
 
-@media (max-width:500px) {
+@media (max-width:720px) {
     body{
         display: block;
         
@@ -447,21 +447,24 @@ h6{
     }
     
     .btn-slide{
-        position: absolute;
+        position: relative;
         top: 35%;
         cursor: pointer;
+        display: flex;
+        justify-content:space-between;
     }
     .next{
         background-color: white;
         padding: 10px;
         border-radius: 20px;
-        transform: translate(1000%, 50%);
+        margin-right:6%;
     }
     .prev{
         background-color: white;
         padding: 10px;
-        border-radius: 20px; 
-        transform: translate(20%,50%);
+        border-radius: 20px;
+        margin-left: 3%; 
+        
     }
     .content-text{
         margin-top: -50px;

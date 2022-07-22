@@ -178,7 +178,7 @@ next.addEventListener('click',function (params) {
   })
 
 prev.addEventListener('click',function (params) {
-  if (curSlide<maxSlide-1) {
+  if (curSlide<=0) {
     curSlide=maxSlide-1
     imgSlide.forEach((s,i)=>s.style.transform=`translateY(${100*(curSlide-i) }%) `)
   }else{
